@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [verzonden, setVerzonden] = useState(false);
   return (
     <main style={{fontFamily:"Georgia,serif",color:"#2C2420"}}>
       <style>{`
@@ -165,12 +167,20 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <form action="https://formspree.io/f/mnjgbbzg" method="POST" style={{flex:1,display:"flex",flexDirection:"column",gap:"24px"}}>
-            <input name="naam" placeholder="Jouw naam" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
-            <input name="email" type="email" placeholder="E-mailadres" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
-            <textarea name="bericht" placeholder="Jouw bericht" rows={4} style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",resize:"none",fontWeight:300,width:"100%"}} />
-            <button type="submit" style={{alignSelf:"flex-start",background:"#8B6C59",color:"#fff",border:"none",padding:"14px 36px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",fontFamily:"sans-serif",cursor:"pointer"}}>Verstuur</button>
-          </form>
+          {verzonden ? (
+            <div style={{flex:1,display:"flex",flexDirection:"column",justifyContent:"center",gap:"16px"}}>
+              <p style={{fontSize:"22px",color:"#D3C9C2",fontFamily:"Georgia,serif",fontWeight:"normal"}}>Bedankt voor je bericht!</p>
+              <p style={{fontSize:"13px",color:"#9e8e84",fontFamily:"sans-serif",fontWeight:300,lineHeight:1.8}}>Ik neem zo snel mogelijk contact met je op.</p>
+              <button onClick={()=>setVerzonden(false)} style={{alignSelf:"flex-start",background:"transparent",color:"#8B6C59",border:"1px solid #5a4a42",padding:"12px 28px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",fontFamily:"sans-serif",cursor:"pointer"}}>Nieuw bericht</button>
+            </div>
+          ) : (
+            <form onSubmit={async(e)=>{e.preventDefault();const f=e.target as HTMLFormElement;const data=new FormData(f);await fetch("https://formspree.io/f/mnjgbbzg",{method:"POST",body:data,headers:{"Accept":"application/json"}});setVerzonden(true);f.reset();}} style={{flex:1,display:"flex",flexDirection:"column",gap:"24px"}}>
+              <input name="naam" placeholder="Jouw naam" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
+              <input name="email" type="email" placeholder="E-mailadres" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
+              <textarea name="bericht" placeholder="Jouw bericht" rows={4} style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",resize:"none",fontWeight:300,width:"100%"}} />
+              <button type="submit" style={{alignSelf:"flex-start",background:"#8B6C59",color:"#fff",border:"none",padding:"14px 36px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",fontFamily:"sans-serif",cursor:"pointer"}}>Verstuur</button>
+            </form>
+          )}
         </div>
       </section>
 
