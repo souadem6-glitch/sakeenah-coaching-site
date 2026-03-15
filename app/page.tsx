@@ -140,7 +140,7 @@ export default function Home() {
         <div className="sk-boeken-inner">
           <div style={{fontSize:"11px",letterSpacing:"3px",textTransform:"uppercase",color:"#B5A49A",fontFamily:"sans-serif",marginBottom:"16px"}}>Plan je sessie</div>
           <h2 style={{fontSize:"28px",color:"#8B6C59",fontWeight:"normal",marginBottom:"16px"}}>Afspraak boeken</h2>
-          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"40px"}}>Een sessie duurt 60 minuten en kost € 60.</p><p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"40px"}}>Annuleren is niet mogelijk binnen 72 uur voor het geplande tijdstip; anders wordt de afspraak in rekening gebracht.</p>
+          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"10px"}}>Een sessie duurt 60 minuten en kost € 60.</p><p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"40px"}}>Annuleren is niet mogelijk binnen 72 uur voor het geplande tijdstip; anders wordt de afspraak in rekening gebracht.</p>
           <div className="sk-calendly-wrap">
             <iframe
               src="https://calendly.com/sakeenah-coaching/60?hide_event_type_details=1&hide_gdpr_banner=1&text_color=8b6c59&primary_color=d3c9c2"
