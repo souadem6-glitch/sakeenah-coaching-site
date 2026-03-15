@@ -20,8 +20,8 @@ export default function Home() {
         .sk-contact-left { flex:0 0 280px; }
         .sk-calendly-wrap { width:100%; height:660px; overflow:hidden; position:relative; }
         .sk-calendly-wrap iframe { margin-top:-50px; }
-        .sk-footer-links { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; }
-        .sk-footer-link { color:#8B6C59; text-decoration:none; font-family:sans-serif; font-size:12px; letter-spacing:1px; display:flex; align-items:center; gap:6px; width:160px; justify-content:center; }
+        .sk-footer-links { display:flex; justify-content:center; align-items:center; gap:20px; margin-bottom:16px; }
+        .sk-footer-link { color:#8B6C59; text-decoration:none; font-family:sans-serif; font-size:12px; letter-spacing:1px; display:flex; align-items:center; gap:6px; width:auto; justify-content:center; }
         .sk-footer-pages { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; }
         .sk-footer-page { color:#8B6C59; text-decoration:none; font-size:12px; letter-spacing:1px; font-family:sans-serif; width:160px; text-align:center; }
         .sk-hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px; }
@@ -179,19 +179,15 @@ export default function Home() {
           <a href="https://www.instagram.com/sakeenah.coaching/" target="_blank" className="sk-footer-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#8B6C59"/></svg>
           </a>
-          <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
           <a href="https://www.facebook.com/profile.php?id=61587201634861" target="_blank" className="sk-footer-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
-          <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
           <a href="mailto:info@sakeenah-coaching.be" className="sk-footer-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
           </a>
-          <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
           <a href="tel:+32494808023" className="sk-footer-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           </a>
-          <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
           <a href="https://wa.me/32494808023" target="_blank" className="sk-footer-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
           </a>
