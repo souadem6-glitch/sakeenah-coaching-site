@@ -90,7 +90,7 @@ export default function Home() {
           <div style={{flex:1}}>
             <div style={{fontSize:"11px",letterSpacing:"3px",textTransform:"uppercase",color:"#B5A49A",fontFamily:"sans-serif",marginBottom:"24px"}}>Gezins en life coaching</div>
             <h1 style={{fontSize:"38px",color:"#D3C9C2",lineHeight:1.2,marginBottom:"24px",fontWeight:"normal",fontStyle:"italic"}}>Een warme plek om<br/><em style={{color:"#D3C9C2"}}>tot rust te komen</em></h1>
-            <p style={{fontSize:"15px",color:"#8B6C59",lineHeight:1.9,maxWidth:"420px",marginBottom:"40px",fontFamily:"sans-serif",fontWeight:300,textAlign:"justify"}}>Vanuit rust en oprechte betrokkenheid begeleid ik gezinnen en mensen met hoogbegaafdheid, ADHD en autisme. Individueel, samen of online, altijd op jouw tempo.</p>
+            <p style={{fontSize:"15px",color:"#8B6C59",lineHeight:1.9,maxWidth:"420px",marginBottom:"40px",fontFamily:"sans-serif",fontWeight:300,textAlign:"justify"}}>Vanuit rust en oprechte betrokkenheid begeleid ik gezinnen en individuen met hoogbegaafdheid, ADHD en autisme. Individueel, samen of online, altijd op jouw tempo.</p>
             <a href="#boeken" style={{display:"inline-block",background:"transparent",color:"#8B6C59",padding:"13px 32px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",textDecoration:"none",fontFamily:"sans-serif",border:"1px solid #D3C9C2"}}>Maak een afspraak</a>
           </div>
           <div className="sk-hero-img">
@@ -117,7 +117,7 @@ export default function Home() {
           <h2 style={{fontSize:"28px",color:"#8B6C59",fontWeight:"normal",marginBottom:"48px"}}>Begeleiding</h2>
           <div className="sk-diensten-grid">
             {[
-              {num:"01",titel:"Voor wie",tekst:"Ik begeleid vrouwen, kinderen en jongeren die ergens tegenaan lopen in het leven. Of het nu gaat om dagelijkse uitdagingen, persoonlijke groei of vragen rond werk en identiteit, wie bewust aan zichzelf wil werken is welkom."},
+              {num:"01",titel:"Voor wie",tekst:"Ik begeleid gezinnen en individuen die ergens tegenaan lopen in het leven. Of het nu gaat om dagelijkse uitdagingen, persoonlijke groei of vragen rond werk en identiteit, wie bewust aan zichzelf wil werken is welkom."},
               {num:"02",titel:"Specialisatie",tekst:"Hoogbegaafdheid, ADHD en autisme zijn voor mij vertrouwd terrein. Vanuit eigen ervaring en gerichte opleiding begeleid ik mensen met neurodiversiteit met kennis, begrip en oprechte betrokkenheid."},
               {num:"03",titel:"Praktisch",tekst:"Sessies duren 60 minuten en kosten € 60. Je kan terecht voor individuele begeleiding, gezinssessies of online sessies. Begeleiding wordt niet terugbetaald door de ziekenkas."},
             ].map((d)=>(

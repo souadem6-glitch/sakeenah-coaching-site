@@ -27,7 +27,7 @@ export default function FAQ() {
     },
     {
       vraag: "Voor wie is coaching geschikt?",
-      antwoord: "Ik begeleid vrouwen, kinderen en jongeren die ergens tegenaan lopen in het leven. Of het nu gaat om dagelijkse uitdagingen, persoonlijke groei of vragen rond neurodiversiteit, wie bewust aan zichzelf wil werken is welkom."
+      antwoord: "Ik begeleid gezinnen en individuen die ergens tegenaan lopen in het leven. Of het nu gaat om dagelijkse uitdagingen, persoonlijke groei of vragen rond neurodiversiteit, wie bewust aan zichzelf wil werken is welkom."
     },
     {
       vraag: "Hoe lang duurt een traject?",
