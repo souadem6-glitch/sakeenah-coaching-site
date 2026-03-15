@@ -15,7 +15,7 @@ export default function Voorwaarden() {
         .sk-mobile-close { position:absolute; top:20px; right:24px; background:none; border:none; font-size:28px; color:#8B6C59; cursor:pointer; }
         .sk-section { padding:80px 60px; max-width:800px; margin:0 auto; }
         .sk-footer-links { display:flex; justify-content:center; align-items:center; gap:0; margin-bottom:16px; }
-        .sk-footer-pages { display:flex; justify-content:center; align-items:center; gap:0; margin-bottom:16px; }
+        .sk-footer-pages { display:flex; justify-content:center; align-items:center; gap:0; margin-bottom:16px; flex-wrap:wrap; }
         @media (max-width: 768px) {
           .sk-nav { padding:10px 24px; }
           .sk-nav-links { display:none; }
@@ -98,14 +98,21 @@ export default function Voorwaarden() {
         </div>
         <div style={{width:"100%",height:"1px",background:"#5a4a42",marginBottom:"16px"}}></div>
         <div className="sk-footer-pages">
-          <a href="/faq" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"auto",padding:"0 12px",textAlign:"center"}}>FAQ</a>
+          <a href="/faq" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",width:"auto",padding:"0 12px",textAlign:"center"}}>FAQ</a>
           <span style={{color:"#B5A49A",width:"12px",textAlign:"center"}}>|</span>
-          <a href="/privacy" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"auto",padding:"0 12px",textAlign:"center"}}>Privacy</a>
+          <a href="/privacy" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",width:"auto",padding:"0 12px",textAlign:"center"}}>Privacy</a>
           <span style={{color:"#B5A49A",width:"12px",textAlign:"center"}}>|</span>
-          <a href="/voorwaarden" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"auto",padding:"0 12px",textAlign:"center"}}>Algemene voorwaarden</a>
+          <a href="/voorwaarden" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",width:"auto",padding:"0 12px",textAlign:"center"}}>Algemene voorwaarden</a>
         </div>
-        <div style={{fontSize:"11px",color:"#5a4a42",letterSpacing:"1px"}}>© 2026 Sakeenah Coaching</div>
+        <div style={{fontSize:"12px",color:"#9e8e84"}}>© 2026 Sakeenah Coaching</div>
       </footer>
+      <button
+        onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
+        style={{position:"fixed",bottom:"32px",right:"32px",background:"#8B6C59",color:"#fff",border:"none",width:"44px",height:"44px",borderRadius:"50%",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 2px 12px rgba(0,0,0,0.15)",zIndex:50}}
+        aria-label="Naar boven"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+      </button>
     </main>
   );
 }
