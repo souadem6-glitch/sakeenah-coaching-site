@@ -103,28 +103,28 @@ export default function FAQ() {
 
       <footer style={{background:"#2C2420",padding:"40px 60px",textAlign:"center",fontFamily:"sans-serif"}}>
         <div className="sk-footer-links">
-          <a href="https://www.instagram.com/sakeenah.coaching/" target="_blank" style={{color:"#D3C9C2",textDecoration:"none",fontSize:"12px",letterSpacing:"1px",display:"flex",alignItems:"center",gap:"6px",width:"160px",justifyContent:"center"}}>
+          <a href="https://www.instagram.com/sakeenah.coaching/" target="_blank" style={{color:"#D3C9C2",textDecoration:"none",fontSize:"12px",letterSpacing:"1px",display:"flex",alignItems:"center",gap:"6px",width:"40px",justifyContent:"center"}}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D3C9C2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#D3C9C2"/></svg>
             Instagram
           </a>
-          <span style={{color:"#5a4a42",width:"20px",textAlign:"center"}}>|</span>
-          <a href="https://www.facebook.com/profile.php?id=61587201634861" target="_blank" style={{color:"#D3C9C2",textDecoration:"none",fontSize:"12px",letterSpacing:"1px",display:"flex",alignItems:"center",gap:"6px",width:"160px",justifyContent:"center"}}>
+          <span style={{color:"#5a4a42",width:"12px",textAlign:"center"}}>|</span>
+          <a href="https://www.facebook.com/profile.php?id=61587201634861" target="_blank" style={{color:"#D3C9C2",textDecoration:"none",fontSize:"12px",letterSpacing:"1px",display:"flex",alignItems:"center",gap:"6px",width:"40px",justifyContent:"center"}}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D3C9C2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             Facebook
           </a>
-          <span style={{color:"#5a4a42",width:"20px",textAlign:"center"}}>|</span>
-          <a href="https://wa.me/32494808023" target="_blank" style={{color:"#D3C9C2",textDecoration:"none",fontSize:"12px",letterSpacing:"1px",display:"flex",alignItems:"center",gap:"6px",width:"160px",justifyContent:"center"}}>
+          <span style={{color:"#5a4a42",width:"12px",textAlign:"center"}}>|</span>
+          <a href="https://wa.me/32494808023" target="_blank" style={{color:"#D3C9C2",textDecoration:"none",fontSize:"12px",letterSpacing:"1px",display:"flex",alignItems:"center",gap:"6px",width:"40px",justifyContent:"center"}}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D3C9C2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
             WhatsApp
           </a>
         </div>
         <div style={{width:"100%",height:"1px",background:"#5a4a42",marginBottom:"16px"}}></div>
         <div className="sk-footer-pages">
-          <a href="/faq" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"160px",textAlign:"center"}}>FAQ</a>
-          <span style={{color:"#5a4a42",width:"20px",textAlign:"center"}}>|</span>
-          <a href="/privacy" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"160px",textAlign:"center"}}>Privacy</a>
-          <span style={{color:"#5a4a42",width:"20px",textAlign:"center"}}>|</span>
-          <a href="/voorwaarden" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"160px",textAlign:"center"}}>Algemene voorwaarden</a>
+          <a href="/faq" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"auto",textAlign:"center"}}>FAQ</a>
+          <span style={{color:"#5a4a42",width:"12px",textAlign:"center"}}>|</span>
+          <a href="/privacy" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"auto",textAlign:"center"}}>Privacy</a>
+          <span style={{color:"#5a4a42",width:"12px",textAlign:"center"}}>|</span>
+          <a href="/voorwaarden" style={{color:"#9e8e84",textDecoration:"none",fontSize:"11px",letterSpacing:"1px",width:"auto",textAlign:"center"}}>Algemene voorwaarden</a>
         </div>
         <div style={{fontSize:"11px",color:"#5a4a42",letterSpacing:"1px"}}>© 2026 Sakeenah Coaching</div>
       </footer>
