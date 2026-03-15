@@ -1,10 +1,6 @@
+"use client";
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Privacybeleid | Sakeenah Coaching Antwerpen",
-  description: "Privacybeleid van Sakeenah Coaching. Hoe wij omgaan met jouw persoonsgegevens.",
-};
 
 export default function Privacy() {
   return (

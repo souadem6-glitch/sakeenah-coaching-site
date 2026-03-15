@@ -1,10 +1,6 @@
+"use client";
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Algemene voorwaarden | Sakeenah Coaching Antwerpen",
-  description: "Algemene voorwaarden van Sakeenah Coaching. Afspraken, annulering, betaling en vertrouwelijkheid.",
-};
 
 export default function Voorwaarden() {
   return (

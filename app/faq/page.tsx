@@ -1,10 +1,7 @@
+"use client";
 import Link from "next/link";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "FAQ | Sakeenah Coaching Antwerpen",
-  description: "Veelgestelde vragen over coaching bij Sakeenah Coaching. Alles over sessies, tarieven, annulering en online begeleiding in Antwerpen.",
-};
+
 
 export default function FAQ() {
   const vragen = [
