@@ -154,6 +154,16 @@ export default function Home() {
             <div style={{fontSize:"11px",letterSpacing:"3px",textTransform:"uppercase",color:"#8B6C59",fontFamily:"sans-serif",marginBottom:"16px"}}>Schrijf me</div>
             <h2 style={{fontSize:"28px",color:"#D3C9C2",fontWeight:"normal",fontFamily:"Georgia,serif",marginBottom:"16px"}}>Neem contact op</h2>
             <p style={{fontSize:"13px",color:"#9e8e84",lineHeight:1.8,fontFamily:"sans-serif",fontWeight:300}}>Heb je een vraag of wil je kennismaken? Stuur een bericht en ik neem zo snel mogelijk contact op.</p>
+            <div style={{marginTop:"24px",display:"flex",flexDirection:"column",gap:"12px"}}>
+              <a href="mailto:info@sakeenah-coaching.be" style={{display:"flex",alignItems:"center",gap:"10px",color:"#D3C9C2",textDecoration:"none",fontSize:"13px",fontFamily:"sans-serif",fontWeight:300}}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+                info@sakeenah-coaching.be
+              </a>
+              <a href="https://wa.me/32494808023" target="_blank" style={{display:"flex",alignItems:"center",gap:"10px",color:"#D3C9C2",textDecoration:"none",fontSize:"13px",fontFamily:"sans-serif",fontWeight:300}}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                +32 494 80 80 23
+              </a>
+            </div>
           </div>
           <div style={{flex:1,display:"flex",flexDirection:"column",gap:"24px"}}>
             <input placeholder="Jouw naam" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
@@ -174,6 +184,11 @@ export default function Home() {
           <a href="https://www.facebook.com/profile.php?id=61587201634861" target="_blank" className="sk-footer-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             Facebook
+          </a>
+          <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
+          <a href="mailto:info@sakeenah-coaching.be" className="sk-footer-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            E-mail
           </a>
           <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
           <a href="https://wa.me/32494808023" target="_blank" className="sk-footer-link">
