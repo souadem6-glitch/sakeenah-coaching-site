@@ -97,11 +97,11 @@ export default function Privacy() {
         </div>
         <div style={{width:"100%",height:"1px",background:"#5a4a42",marginBottom:"16px"}}></div>
         <div className="sk-footer-pages">
-          <a href="/faq" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",width:"auto",padding:"0 12px",textAlign:"center"}}>FAQ</a>
+          <a href="/faq" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",fontFamily:"sans-serif",fontWeight:400,width:"auto",padding:"0 12px",textAlign:"center"}}>FAQ</a>
           <span style={{color:"#B5A49A",width:"12px",textAlign:"center"}}>|</span>
-          <a href="/privacy" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",width:"auto",padding:"0 12px",textAlign:"center"}}>Privacy</a>
+          <a href="/privacy" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",fontFamily:"sans-serif",fontWeight:400,width:"auto",padding:"0 12px",textAlign:"center"}}>Privacy</a>
           <span style={{color:"#B5A49A",width:"12px",textAlign:"center"}}>|</span>
-          <a href="/voorwaarden" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",width:"auto",padding:"0 12px",textAlign:"center"}}>Algemene voorwaarden</a>
+          <a href="/voorwaarden" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",fontFamily:"sans-serif",fontWeight:400,width:"auto",padding:"0 12px",textAlign:"center"}}>Algemene voorwaarden</a>
         </div>
         © 2026 Sakeenah Coaching
       </footer>
