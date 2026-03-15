@@ -74,7 +74,7 @@ export default function Voorwaarden() {
         </div>
       </section>
 
-      <footer style={{background:"#2C2420",padding:"40px 60px",textAlign:"center",fontFamily:"sans-serif"}}>
+      <footer style={{background:"#2C2420",padding:"32px 60px",textAlign:"center",fontSize:"12px",color:"#9e8e84",fontFamily:"sans-serif"}}>
         <div className="sk-footer-links">
           <a href="https://www.instagram.com/sakeenah.coaching/" target="_blank" style={{color:"#8B6C59",textDecoration:"none",display:"flex",alignItems:"center",justifyContent:"center",width:"40px"}}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#8B6C59"/></svg>
@@ -104,7 +104,7 @@ export default function Voorwaarden() {
           <span style={{color:"#B5A49A",width:"12px",textAlign:"center"}}>|</span>
           <a href="/voorwaarden" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",width:"auto",padding:"0 12px",textAlign:"center"}}>Algemene voorwaarden</a>
         </div>
-        <div style={{fontSize:"12px",color:"#9e8e84"}}>© 2026 Sakeenah Coaching</div>
+        © 2026 Sakeenah Coaching
       </footer>
       <button
         onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
