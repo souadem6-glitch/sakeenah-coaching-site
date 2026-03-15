@@ -23,7 +23,7 @@ export default function Home() {
         .sk-footer-links { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; }
         .sk-footer-link { color:#8B6C59; text-decoration:none; font-family:sans-serif; font-size:12px; letter-spacing:1px; display:flex; align-items:center; gap:6px; width:40px; justify-content:center; }
         .sk-footer-pages { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; flex-wrap:wrap; }
-        .sk-footer-page { color:#8B6C59; text-decoration:none; font-size:12px; letter-spacing:1px; font-family:sans-serif; width:auto; padding:0 12px; text-align:center; }
+        .sk-footer-page { color:#8B6C59; text-decoration:none; font-size:12px; font-family:sans-serif; width:auto; padding:0 12px; text-align:center; }
         .sk-hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px; }
         .sk-hamburger span { display:block; width:24px; height:1.5px; background:#8B6C59; }
         .sk-mobile-menu { display:none; }
@@ -177,7 +177,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer style={{background:"#FAF8F6",padding:"32px 60px",textAlign:"center",fontSize:"11px",color:"#B5A49A",fontFamily:"sans-serif",letterSpacing:"1px"}}>
+      <footer style={{background:"#FAF8F6",padding:"32px 60px",textAlign:"center",fontSize:"12px",color:"#B5A49A",fontFamily:"sans-serif"}}>
         <div className="sk-footer-links">
           <a href="https://www.instagram.com/sakeenah.coaching/" target="_blank" className="sk-footer-link">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B6C59" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="#8B6C59"/></svg>
@@ -209,6 +209,13 @@ export default function Home() {
         </div>
         © 2026 Sakeenah Coaching
       </footer>
+      <button
+        onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
+        style={{position:"fixed",bottom:"32px",right:"32px",background:"#8B6C59",color:"#fff",border:"none",width:"44px",height:"44px",borderRadius:"50%",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 2px 12px rgba(0,0,0,0.15)",zIndex:50}}
+        aria-label="Naar boven"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+      </button>
     </main>
   );
 }
