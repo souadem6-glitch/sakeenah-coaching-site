@@ -119,7 +119,7 @@ export default function Home() {
             {[
               {num:"01",titel:"Voor wie",tekst:"Ik begeleid gezinnen en individuen die ergens tegenaan lopen in het leven. Of het nu gaat om dagelijkse uitdagingen, persoonlijke groei of vragen rond werk en identiteit, wie bewust aan zichzelf wil werken is welkom."},
               {num:"02",titel:"Specialisatie",tekst:"Hoogbegaafdheid, ADHD en autisme zijn voor mij vertrouwd terrein. Vanuit eigen ervaring en gerichte opleiding begeleid ik mensen met neurodiversiteit met kennis, begrip en oprechte betrokkenheid."},
-              {num:"03",titel:"Praktisch",tekst:"Sessies duren 60 minuten en kosten € 60. Je kan terecht voor individuele begeleiding, gezinssessies of online sessies. Begeleiding wordt niet terugbetaald door de ziekenkas."},
+              {num:"03",titel:"Praktisch",tekst:"Sessies duren 60 minuten en kosten € 60. Je kan terecht voor individuele begeleiding, gezinssessies of online sessies. Begeleiding wordt niet terugbetaald door de mutualiteit."},
             ].map((d)=>(
               <div key={d.num} style={{background:"#fff",padding:"32px 28px",border:"1px solid #EDE8E4"}}>
                 <div style={{display:"flex",alignItems:"center",gap:"12px",marginBottom:"12px"}}>

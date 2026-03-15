@@ -22,8 +22,8 @@ export default function FAQ() {
       antwoord: "Beide zijn mogelijk. De praktijk is gevestigd in Antwerpen. Online sessies gaan door via een videoplatform naar keuze."
     },
     {
-      vraag: "Wordt begeleiding terugbetaald door de ziekenkas?",
-      antwoord: "Nee, begeleiding via Sakeenah Coaching wordt niet terugbetaald door de ziekenkas."
+      vraag: "Wordt begeleiding terugbetaald door de mutualiteit?",
+      antwoord: "Nee, begeleiding via Sakeenah Coaching wordt niet terugbetaald door de mutualiteit."
     },
     {
       vraag: "Voor wie is coaching geschikt?",
