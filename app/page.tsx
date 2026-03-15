@@ -165,12 +165,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div style={{flex:1,display:"flex",flexDirection:"column",gap:"24px"}}>
-            <input placeholder="Jouw naam" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
-            <input placeholder="E-mailadres" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
-            <textarea placeholder="Jouw bericht" rows={4} style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",resize:"none",fontWeight:300,width:"100%"}} />
-            <button style={{alignSelf:"flex-start",background:"#8B6C59",color:"#fff",border:"none",padding:"14px 36px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",fontFamily:"sans-serif",cursor:"pointer"}}>Verstuur</button>
-          </div>
+          <form action="https://formspree.io/f/mnjgbbzg" method="POST" style={{flex:1,display:"flex",flexDirection:"column",gap:"24px"}}>
+            <input name="naam" placeholder="Jouw naam" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
+            <input name="email" type="email" placeholder="E-mailadres" style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",fontWeight:300,width:"100%"}} />
+            <textarea name="bericht" placeholder="Jouw bericht" rows={4} style={{background:"transparent",border:"none",borderBottom:"1px solid #5a4a42",padding:"10px 0",color:"#D3C9C2",fontSize:"13px",fontFamily:"sans-serif",outline:"none",resize:"none",fontWeight:300,width:"100%"}} />
+            <button type="submit" style={{alignSelf:"flex-start",background:"#8B6C59",color:"#fff",border:"none",padding:"14px 36px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",fontFamily:"sans-serif",cursor:"pointer"}}>Verstuur</button>
+          </form>
         </div>
       </section>
 
