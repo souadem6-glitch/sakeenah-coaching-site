@@ -22,8 +22,8 @@ export default function Home() {
         .sk-calendly-wrap iframe { margin-top:-50px; }
         .sk-footer-links { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; }
         .sk-footer-link { color:#8B6C59; text-decoration:none; font-family:sans-serif; font-size:12px; letter-spacing:1px; display:flex; align-items:center; gap:6px; width:40px; justify-content:center; }
-        .sk-footer-pages { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; }
-        .sk-footer-page { color:#8B6C59; text-decoration:none; font-size:12px; letter-spacing:1px; font-family:sans-serif; width:160px; text-align:center; }
+        .sk-footer-pages { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; flex-wrap:wrap; }
+        .sk-footer-page { color:#8B6C59; text-decoration:none; font-size:12px; letter-spacing:1px; font-family:sans-serif; width:auto; padding:0 12px; text-align:center; }
         .sk-hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:8px; }
         .sk-hamburger span { display:block; width:24px; height:1.5px; background:#8B6C59; }
         .sk-mobile-menu { display:none; }
@@ -198,10 +198,10 @@ export default function Home() {
         </div>
         <div className="sk-footer-pages">
           <a href="/faq" className="sk-footer-page">FAQ</a>
-          <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
+          <span style={{color:"#D3C9C2",width:"12px",textAlign:"center"}}>|</span>
           <a href="/privacy" className="sk-footer-page">Privacy</a>
-          <span style={{color:"#D3C9C2",width:"20px",textAlign:"center"}}>|</span>
-          <a href="/voorwaarden" className="sk-footer-page" style={{width:"auto"}}>Algemene voorwaarden</a>
+          <span style={{color:"#D3C9C2",width:"12px",textAlign:"center"}}>|</span>
+          <a href="/voorwaarden" className="sk-footer-page">Algemene voorwaarden</a>
         </div>
         © 2026 Sakeenah Coaching
       </footer>
