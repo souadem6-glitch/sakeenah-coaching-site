@@ -130,6 +130,9 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div style={{marginTop:"40px",textAlign:"center"}}>
+            <a href="/faq" style={{color:"#8B6C59",fontSize:"12px",letterSpacing:"2px",textTransform:"uppercase",textDecoration:"none",fontFamily:"sans-serif",borderBottom:"1px solid #D3C9C2",paddingBottom:"4px"}}>Meer vragen? Bekijk de FAQ →</a>
+          </div>
         </div>
       </section>
 
