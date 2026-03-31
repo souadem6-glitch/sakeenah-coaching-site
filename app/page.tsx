@@ -7,22 +7,23 @@ export default function Home() {
 
   useEffect(() => {
     // Load Cal.com embed script
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (function (C: any, A: string, L: string) {
-      let p = function (a: any, ar: any) { a.q.push(ar); };
-      let d = C.document;
-      C.Cal = C.Cal || function () {
-        let cal = C.Cal;
-        let ar = arguments;
+      const p = function (a: any, ar: any) { a.q.push(ar); };
+      const d = C.document;
+      C.Cal = C.Cal || function (this: any) {
+        const cal = C.Cal;
+        const ar = arguments;
         if (!cal.loaded) {
           cal.ns = {};
-          cal.q = cal.q || [];
+          cal.q = cal.q || ([] as any[]);
           d.head.appendChild(d.createElement("script")).src = A;
           cal.loaded = true;
         }
         if (ar[0] === L) {
-          const api = function () { p(api, arguments); };
+          const api: any = function () { p(api, arguments); };
           const namespace = ar[1];
-          api.q = api.q || [];
+          api.q = api.q || ([] as any[]);
           if (typeof namespace === "string") {
             cal.ns[namespace] = cal.ns[namespace] || api;
             p(cal.ns[namespace], ar);
