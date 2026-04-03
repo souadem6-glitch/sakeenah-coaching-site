@@ -1,57 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [verzonden, setVerzonden] = useState(false);
-
-  useEffect(() => {
-    // Load Cal.com embed script
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (function (C: any, A: string, L: string) {
-      const p = function (a: any, ar: any) { a.q.push(ar); };
-      const d = C.document;
-      C.Cal = C.Cal || function (this: any) {
-        const cal = C.Cal;
-        const ar = arguments;
-        if (!cal.loaded) {
-          cal.ns = {};
-          cal.q = cal.q || ([] as any[]);
-          d.head.appendChild(d.createElement("script")).src = A;
-          cal.loaded = true;
-        }
-        if (ar[0] === L) {
-          const api: any = function () { p(api, arguments); };
-          const namespace = ar[1];
-          api.q = api.q || ([] as any[]);
-          if (typeof namespace === "string") {
-            cal.ns[namespace] = cal.ns[namespace] || api;
-            p(cal.ns[namespace], ar);
-            p(cal, ["initNamespace", namespace]);
-          } else p(cal, ar);
-          return;
-        }
-        p(cal, ar);
-      };
-    })(window, "https://app.cal.com/embed/embed.js", "init");
-
-    const w = window as any;
-    w.Cal("init", "coachingsessie", { origin: "https://app.cal.com" });
-    w.Cal.ns.coachingsessie("inline", {
-      elementOrSelector: "#my-cal-inline-coachingsessie",
-      config: { layout: "month_view", useSlotsViewOnSmallScreen: "true" },
-      calLink: "sakeenah-coaching-coachingsessie/coachingsessie",
-    });
-    w.Cal.ns.coachingsessie("ui", {
-      cssVarsPerTheme: {
-        light: { "cal-brand": "#8B6C59" },
-        dark: { "cal-brand": "#D3C9C2" },
-      },
-      hideEventTypeDetails: false,
-      layout: "month_view",
-    });
-  }, []);
-
   return (
     <main style={{fontFamily:"Georgia,serif",color:"#2C2420"}}>
       <style>{`
@@ -66,8 +18,8 @@ export default function Home() {
         .sk-boeken-inner { max-width:1000px; margin:0 auto; padding:0 60px; text-align:center; }
         .sk-contact-inner { max-width:1000px; margin:0 auto; padding:0 60px; display:flex; gap:80px; }
         .sk-contact-left { flex:0 0 280px; }
-        .sk-cal-wrap { width:100%; min-height:660px; margin-top:32px; }
-        #my-cal-inline-coachingsessie { width:100%; height:660px; }
+        .sk-calendly-wrap { width:100%; height:660px; overflow:hidden; position:relative; }
+        .sk-calendly-wrap iframe { margin-top:-50px; }
         .sk-footer-links { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; }
         .sk-footer-link { color:#8B6C59; text-decoration:none; font-family:sans-serif; font-size:12px; letter-spacing:1px; display:flex; align-items:center; gap:6px; width:40px; justify-content:center; }
         .sk-footer-pages { display:flex; justify-content:center; align-items:center; gap:0px; margin-bottom:16px; flex-wrap:wrap; }
@@ -97,7 +49,8 @@ export default function Home() {
           section#boeken > div { padding:0 24px; }
 
           .sk-boeken-inner { padding:0 24px; }
-          #my-cal-inline-coachingsessie { height:700px; }
+          .sk-calendly-wrap { height:auto; min-height:600px; }
+          .sk-calendly-wrap iframe { margin-top:0; height:700px; }
 
           .sk-contact-inner { flex-direction:column; gap:40px; padding:0 24px; }
           .sk-contact-left { flex:none; }
@@ -187,13 +140,18 @@ export default function Home() {
         <div className="sk-boeken-inner">
           <div style={{fontSize:"11px",letterSpacing:"3px",textTransform:"uppercase",color:"#B5A49A",fontFamily:"sans-serif",marginBottom:"16px"}}>Plan je sessie</div>
           <h2 style={{fontSize:"28px",color:"#8B6C59",fontWeight:"normal",marginBottom:"16px"}}>Afspraak boeken</h2>
-          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"10px"}}>Een sessie duurt 60 minuten en bedraagt 60 euro.</p>
-          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"10px"}}>
-            Annuleren kan niet binnen 72 uur voor het geplande tijdstip.<br />
-            Bij te late annulering wordt de afspraak in rekening gebracht.
-          </p>
-          <div className="sk-cal-wrap">
-            <div id="my-cal-inline-coachingsessie"></div>
+          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"10px"}}>Een sessie duurt 60 minuten en bedraagt 60 euro.</p><p style={{ fontSize: "14px", color: "#7a6a62", fontFamily: "sans-serif", fontWeight: 300, marginBottom: "10px" }}>
+  Annuleren kan niet binnen 72 uur voor het geplande tijdstip.<br />
+  Bij te late annulering wordt de afspraak in rekening gebracht.
+</p>
+          <div className="sk-calendly-wrap">
+            <iframe
+              src="https://calendly.com/sakeenah-coaching/60?hide_event_type_details=1&hide_gdpr_banner=1&text_color=8b6c59&primary_color=d3c9c2"
+              width="100%"
+              height="760"
+              frameBorder={0}
+              scrolling="no"
+            ></iframe>
           </div>
         </div>
       </section>
