@@ -11,7 +11,7 @@ export default function Home() {
         .sk-nav-links { display:flex; gap:36px; }
         .sk-hero { background:#FAF8F6; padding:100px 0; }
         .sk-hero-inner { max-width:1000px; margin:0 auto; padding:0 60px; display:flex; align-items:center; gap:80px; }
-        .sk-hero-img { width:420px; height:320px; flex-shrink:0; overflow:hidden; }
+        .sk-hero-img { width:560px; height:320px; flex-shrink:0; overflow:hidden; }
         .sk-over-inner { max-width:1000px; margin:0 auto; padding:0 60px; display:flex; gap:80px; align-items:flex-start; }
         .sk-over-label { flex:0 0 200px; }
         .sk-diensten-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
