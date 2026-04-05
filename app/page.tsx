@@ -11,7 +11,7 @@ export default function Home() {
         .sk-nav-links { display:flex; gap:36px; }
         .sk-hero { background:#FAF8F6; padding:100px 0; }
         .sk-hero-inner { max-width:1000px; margin:0 auto; padding:0 60px; display:flex; align-items:center; gap:80px; }
-        .sk-hero-img { width:560px; height:320px; flex-shrink:0; overflow:hidden; }
+        .sk-hero-img { width:420px; height:320px; flex-shrink:0; overflow:hidden; background:#FAF8F6; }
         .sk-over-inner { max-width:1000px; margin:0 auto; padding:0 60px; display:flex; gap:80px; align-items:flex-start; }
         .sk-over-label { flex:0 0 200px; }
         .sk-diensten-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
@@ -39,7 +39,7 @@ export default function Home() {
 
           .sk-hero { padding:60px 0; }
           .sk-hero-inner { flex-direction:column; gap:40px; padding:0 24px; }
-          .sk-hero-img { width:100%; height:240px; }
+          .sk-hero-img { width:100%; height:auto; }
 
           .sk-over-inner { flex-direction:column; gap:24px; padding:0 24px; }
           .sk-over-label { flex:none; }
@@ -94,7 +94,7 @@ export default function Home() {
             <a href="#boeken" style={{display:"inline-block",background:"transparent",color:"#8B6C59",padding:"13px 32px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",textDecoration:"none",fontFamily:"sans-serif",border:"1px solid #D3C9C2"}}>Maak een afspraak</a>
           </div>
           <div className="sk-hero-img">
-            <img src="/PraktijkCoaching_filter.jpg" alt="Praktijkruimte Sakeenah Coaching" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"center"}} />
+            <img src="/PraktijkCoaching_filter.jpg" alt="Praktijkruimte Sakeenah Coaching" style={{width:"100%",height:"100%",objectFit:"contain",objectPosition:"center"}} />
           </div>
         </div>
       </section>
