@@ -94,7 +94,7 @@ export default function Home() {
             <a href="#boeken" style={{display:"inline-block",background:"transparent",color:"#8B6C59",padding:"13px 32px",fontSize:"11px",letterSpacing:"2px",textTransform:"uppercase",textDecoration:"none",fontFamily:"sans-serif",border:"1px solid #D3C9C2"}}>Maak een afspraak</a>
           </div>
           <div className="sk-hero-img">
-            <img src="/sakeenah-praktijk (1).jpg" alt="Praktijkruimte Sakeenah Coaching" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"center"}} />
+            <img src="/PraktijkCoaching_filter.jpg" alt="Praktijkruimte Sakeenah Coaching" style={{width:"100%",height:"100%",objectFit:"cover",objectPosition:"center"}} />
           </div>
         </div>
       </section>
@@ -140,10 +140,11 @@ export default function Home() {
         <div className="sk-boeken-inner">
           <div style={{fontSize:"11px",letterSpacing:"3px",textTransform:"uppercase",color:"#B5A49A",fontFamily:"sans-serif",marginBottom:"16px"}}>Plan je sessie</div>
           <h2 style={{fontSize:"28px",color:"#8B6C59",fontWeight:"normal",marginBottom:"16px"}}>Afspraak boeken</h2>
-          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"10px"}}>Een sessie duurt 60 minuten en bedraagt 60 euro.</p><p style={{ fontSize: "14px", color: "#7a6a62", fontFamily: "sans-serif", fontWeight: 300, marginBottom: "10px" }}>
-  Annuleren kan niet binnen 72 uur voor het geplande tijdstip.<br />
-  Bij te late annulering wordt de afspraak in rekening gebracht.
-</p>
+          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"10px"}}>Een sessie duurt 60 minuten en bedraagt 60 euro.</p>
+          <p style={{fontSize:"14px",color:"#7a6a62",fontFamily:"sans-serif",fontWeight:300,marginBottom:"10px"}}>
+            Annuleren kan niet binnen 72 uur voor het geplande tijdstip.<br />
+            Bij te late annulering wordt de afspraak in rekening gebracht.
+          </p>
           <div className="sk-calendly-wrap">
             <iframe
               src="https://calendly.com/sakeenah-coaching/60?hide_event_type_details=1&hide_gdpr_banner=1&text_color=8b6c59&primary_color=d3c9c2"
@@ -210,7 +211,7 @@ export default function Home() {
           <span style={{color:"#D3C9C2",width:"12px",textAlign:"center"}}>|</span>
           <a href="/voorwaarden" className="sk-footer-page">Algemene voorwaarden</a>
         </div>
-        © 2026 Sakeenah Coaching
+        © {new Date().getFullYear()} Sakeenah Coaching
       </footer>
       <button
         onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}

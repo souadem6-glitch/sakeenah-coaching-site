@@ -104,7 +104,7 @@ export default function Voorwaarden() {
           <span style={{color:"#B5A49A",width:"12px",textAlign:"center"}}>|</span>
           <a href="/voorwaarden" style={{color:"#8B6C59",textDecoration:"none",fontSize:"12px",fontFamily:"sans-serif",fontWeight:400,width:"auto",padding:"0 12px",textAlign:"center"}}>Algemene voorwaarden</a>
         </div>
-        © 2026 Sakeenah Coaching
+        © {new Date().getFullYear()} Sakeenah Coaching
       </footer>
       <button
         onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
